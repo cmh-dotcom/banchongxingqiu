@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>心智成长日托 - 伴宠星球</title>
+    <style>
+        /* 通用温馨版样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", "幼圆", Arial;
+            color: #5a4b40;
+            background-color: #fff9f6;
+        }
+        .nav {
+            background-color: #ffb59e;
+            padding: 18px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 3px 10px rgba(255,181,158,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 19px;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        .nav a:hover::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+        .content {
+            width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(255,181,158,0.1);
+        }
+        .section h2 {
+            color: #ff9e7d;
+            border-bottom: 3px solid #ffecd8;
+            padding-bottom: 12px;
+            font-size: 28px;
+            position: relative;
+            padding-left: 15px;
+        }
+        .section h2::before {
+            content: "🐾";
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        .card {
+            background-color: #fffdfb;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 3px 8px rgba(255,181,158,0.15);
+            border-left: 5px solid #ffb59e;
+        }
+        .service-img {
+            width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(255,181,158,0.2);
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #5a4b40;
+            color: #fff9f6;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            border-radius: 20px 20px 0 0;
+        }
+        .footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .footer .motto {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #ffecd8;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">首页</a>
+        <a href="service.html">心智成长日托</a>
+        <a href="analysis.html">行为解读平台</a>
+        <a href="activity.html">主题社群活动</a>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h2>心智成长日托中心：超越传统寄养</h2>
+            
+            <!-- 服务亮点1：专业评估 -->
+            <div class="card">
+                <h3>1. 入园前专业评估</h3>
+                <p>为每只宠物做性格与行为测试，比如“是否害怕陌生环境”“是否愿意和其他宠物互动”，定制专属日程（例：胆小宠物优先安排一对一活动）。</p>
+                <img class="service-img" src="service_rituo1.jpg" alt="宠物性格评估">
+            </div>
+
+            <!-- 服务亮点2：结构化活动 -->
+            <div class="card">
+                <h3>2. 结构化日间活动</h3>
+                <p>每日3大核心活动，促进宠物心智发展：</p>
+                <p>☑️ 上午：社交游戏（小群体互动，培养友好性格）</p>
+                <p>☑️ 下午：嗅闻探索（藏零食+障碍赛道，锻炼嗅觉与专注力）</p>
+                <p>☑️ 傍晚：音乐放松（播放舒缓钢琴曲，缓解分离焦虑）</p>
+                <img class="service-img" src="service_rituo2.jpg" alt="宠物社交游戏">
+            </div>
+
+            <!-- 服务亮点3：实时直播 -->
+            <div class="card">
+                <h3>3. 实时直播“云吸宠”</h3>
+                <p>主人扫码即可进入专属直播间，随时查看宠物状态（例：看到宠物在玩玩具、吃饭），缓解加班愧疚，获得即时安心感。</p>
+                <img class="service-img" src="service_rituo3.jpg" alt="宠物实时直播">
+            </div>
+        <!-- 新增日托日程表 -->
+<div style="display: grid; grid-template-columns: 1fr 3fr; gap: 10px; margin-top: 15px;">
+    <!-- 每个日程行加hover高亮 -->
+    <div style="font-weight: bold; color: #ff9e7d; padding: 5px; transition: background-color 0.3s;">9:00-10:00</div>
+    <div style="padding: 5px; transition: background-color 0.3s; cursor: pointer;" onmouseover="this.style.backgroundColor='#fff9f6'" onmouseout="this.style.backgroundColor='transparent'">
+        🐾 晨间社交：小群体互动游戏（比如“抢零食”）
+    </div>
+    <div style="font-weight: bold; color: #ff9e7d; padding: 5px; transition: background-color 0.3s;">10:00-12:00</div>
+    <div style="padding: 5px; transition: background-color 0.3s; cursor: pointer;" onmouseover="this.style.backgroundColor='#fff9f6'" onmouseout="this.style.backgroundColor='transparent'">
+        🧩 心智训练：嗅闻藏食+简易障碍赛
+    </div>
+    <!-- 其他日程行同理，都加上这2个属性 -->
+</div>
+    <div class="footer">
+        <p class="motto">🐾 陪伴是最长情的告白，愿每只毛孩子都被温柔以待 🐾</p>
+        <p>伴宠星球 © 2025 宠物心理陪伴平台 | 课程作业展示</p>
+    </div>
+</body>
+</html>
